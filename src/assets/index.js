@@ -5,7 +5,6 @@ import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import quotes from "./quotes.svg";
-import logo from "./logo.png";
 import robot from "./robot.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
@@ -24,6 +23,7 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import video from "./video.mp4";
+import logo from "./logo.png"
 import videoStock1 from "./videoStock1.jpg";
 import stock1 from "./stock1.mp4";
 import stockImg from "./stock1.jpg";
