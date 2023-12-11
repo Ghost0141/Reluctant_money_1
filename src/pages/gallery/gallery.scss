@@ -1,0 +1,97 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .innerContainer {
+        max-width: 1280px;
+        width: 100%;
+        .gallery {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-width: 33%;
+            -moz-column-width: 33%;
+            column-width: 33%;
+            padding: 0 12px;
+
+            .pics {
+                -webkit-transition: all 350ms ease;
+                transition: all 350ms ease;
+                cursor: pointer;
+                margin-bottom: .85rem;
+                border-radius: 12px;
+                overflow: hidden;
+
+                img {
+                    transition: all 1s ease-out;
+
+                    &:hover {
+                        filter: brightness(1.4);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+        .communityContainer {
+            margin-top: 200px;
+            text-align: center;
+
+            .community {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                border-radius: 10px;
+                .youtube-video {
+                    overflow: hidden;
+                    width: 400px;
+                    height: 250px;
+                    margin: 10px;
+                    border-radius: 10px;
+                    transition: all 1s ease;
+                    filter: brightness(1.5);
+                    &:hover {
+                        filter: brightness(1.3);
+                    }
+                }
+            }
+        }
+
+        @media(max-width:480px) {
+            .gallery {
+                -webkit-column-count: 1;
+                -moz-column-count: 1;
+                column-count: 1;
+                -webkit-column-width: 100%;
+                -moz-column-width: 100%;
+                column-width: 100%;
+
+            }
+
+            .community {
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width:991px) {
+            .gallery {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+            }
+
+            .community {
+                flex-direction: column;
+
+                .youtube-video {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+        }
+    }
+
+}

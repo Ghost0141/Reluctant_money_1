@@ -1,0 +1,102 @@
+.method-container {
+    .section-m1 {
+        display: flex;
+        justify-content: center;
+
+        .wrapper-m1 {
+            width: 100%;
+            max-width: 1024px;
+            margin: 20px 10px;
+
+            .link {
+                border-radius: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                font-size: 1.3rem;
+                font-weight: 500;
+                border: 1px solid gray;
+                box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+                background: linear-gradient(144.39deg,
+                        #ffffff -278.56%,
+                        #6d6d6d -78.47%,
+                        #11101d 91.61%);
+                ;
+                padding: 10px;
+            }
+
+            .active {
+                background: radial-gradient(at right top, rgb(254, 249, 195), rgb(253, 224, 71), rgb(234, 179, 8));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+    }
+
+    .section-outline {
+        position: relative;
+        .section-wrapper {
+            .Outline {
+                font-family: 'Whisper', cursiveS;
+                font-weight: 600;
+                font-size: 60px;
+            }
+
+            .outline-item {
+                margin-bottom: 30px;
+
+                .outline-key {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    background: linear-gradient(to right, rgb(254, 240, 138), rgb(234, 179, 8));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    cursor: pointer;
+                }
+
+
+                .outline-value {
+                    margin-left: 20px;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    font-size: 19px;
+                    max-height: 0;
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                    /* Add transition for max-height and opacity */
+
+
+                    .outline-value-item {
+                        display: flex;
+                        gap: 10px;
+                    }
+
+                }
+
+                .active {
+                    padding-bottom: 10px;
+                    max-height: 300px;
+                    /* Set an appropriate value for max-height */
+                    opacity: 1;
+                }
+
+                .line {
+                    height: 1px;
+                    background: #494949;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}

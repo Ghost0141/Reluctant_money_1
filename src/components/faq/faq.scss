@@ -1,0 +1,50 @@
+/* faq.scss */
+
+.container {
+    margin: 50px 0;
+    position: relative;
+  
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+  
+      .list {
+        padding: 0 20px;
+        transition: padding 0.5s ease; /* Add transition for padding */
+  
+        .title {
+          display: flex;
+          justify-content: space-between;
+  
+          .icon {
+            font-size: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Add transition for transform */
+          }
+  
+          .ques {}
+        }
+  
+        .ans {
+            font-size: 20px;
+          padding-bottom: 10px;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add transition for max-height and opacity */
+        }
+  
+        .active {
+          padding-bottom: 10px;
+          max-height: 300px; /* Set an appropriate value for max-height */
+          opacity: 1;
+        }
+  
+        .line {
+          height: 1px;
+          background: #494949;
+        }
+      }
+    }
+  }
+  

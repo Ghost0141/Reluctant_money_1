@@ -1,0 +1,73 @@
+.Container {
+    width: 100%;
+    margin-top: 1.25rem;
+    margin-bottom: 50px;
+
+
+    .wrapper {
+        width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        h1 {
+            text-align: center;
+            margin: 20px;
+            font-size: 50px;
+        }
+
+        .stats {
+            width: 100%;
+            // background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+   
+
+
+            .box {
+                padding: 10px 0;
+                width: 350px;
+                height: 180px;
+                border-radius: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                margin: 0px 10px;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+            .student {
+                background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+            }
+
+            .seminar {
+                @apply bg-gradient-to-b from-orange-500 to-yellow-300
+            }
+
+            .cities {
+                background: linear-gradient(-150.81deg,
+                        #def9fa -43.27%,
+                        #bef3f5 -21.24%,
+                        #9dedf0 12.19%,
+                        #7de7eb 29.82%,
+                        #5ce1e6 51.94%,
+                        #33bbcf 90.29%);
+            }
+        }
+
+        @media(max-width:480px) {
+            .stats{
+                width: 100%;
+                margin-right: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+
+}

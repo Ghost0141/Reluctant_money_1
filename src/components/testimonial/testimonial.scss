@@ -1,0 +1,107 @@
+// .listitem {
+//     width: 400px;
+//     height: 200px;
+//     background-color: white;
+//     color: black;
+//     margin-right: 5px;
+// }
+
+
+.list {
+    width: 100%;
+    margin: 20px 0;
+ 
+    .listTitle {
+        margin-bottom: 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            h1{
+                font-size: 3rem;
+                font-weight: 500;
+                background: linear-gradient(to right, rgb(249, 115, 22), rgb(253, 224, 71));
+                -webkit-background-clip: text; /* For Safari/Chrome */
+                color: transparent;
+                display: inline-block; /* Ensures the gradient is applied only to the text */
+                
+            }
+
+
+        .slideButton {
+            display: flex;
+            gap: 20px;
+            
+
+            .horizontal-line {
+                height: 1px;
+                background: linear-gradient(to right, rgb(249, 115, 22), rgb(253, 224, 71));
+                width: 300px;
+                margin: 20px 0;
+                
+            }
+
+
+            .arrow {
+                cursor: pointer;
+                font-size: 50px;
+                color: conic-gradient(at center top, rgb(17, 24, 39), rgb(243, 244, 246), rgb(17, 24, 39));
+            }
+        }
+    }
+
+    .wrapper {
+        // width: 100%;
+        overflow-x: hidden;
+        .container {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            transition: all 1s ease-in-out;
+            transform: translateX(0px);
+            .listitem{
+                border-radius: 10px;
+                margin-right: 10px;
+                min-width: 390px;
+                height: 230px;
+                color: black;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+             }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @media(max-width:480px) {
+        .listTitle{
+            width: 100%;
+            flex-direction: column;
+        .slideButton{
+            width: 100%;
+            .horizontal-line{
+                width: 150px;
+            }
+        }
+
+        }
+    }
+}
