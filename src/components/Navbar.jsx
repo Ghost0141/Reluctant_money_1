@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import {navLinks} from "../constants"
 
-import { logo, close, menu } from "../assets";
+import { logo, close, menu } from "../assets/index";
 import { Link } from 'react-router-dom';
 
 
