@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import IconButton from '@mui/material/IconButton';
 import './footer.scss'; // Import the SCSS file for styling
-import { logo } from "../../assets/index"
+import { logo } from "../../assets"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
