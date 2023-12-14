@@ -1,0 +1,81 @@
+.contact-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    cursor: none;
+}
+
+.contact-container {
+
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    margin: 5rem auto;
+    min-width: 400px;
+    width: fit-content;
+    height: 250px;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(79, 9, 139, 0.5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: .7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden;
+    transition: .5s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:480px) {
+        margin: 10px auto;
+        min-width: 300px;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        .contactInput {
+            background-color: transparent;
+            border: none;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 4px 8px;
+            width: 250;
+            letter-spacing: 3px;
+            font-size: 20px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .Submitbutton{
+            border: 1px solid white;
+            width: 100px;
+            padding: 3px;
+            border-radius: 4px;
+            transition: all 2s ease-in-out;
+            background-color: white;
+                color: #000000;
+                font-weight: 600;
+
+        }
+    }
+
+    .closeContact {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}

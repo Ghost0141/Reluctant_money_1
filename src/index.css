@@ -157,3 +157,9 @@ body {
 
 
 }
+.toast-message{
+  background: linear-gradient(to right, rgb(254, 240, 138), rgb(250, 204, 21), rgb(161, 98, 7));
+  font-size: 18px;
+  padding: 5px 10px;
+
+}
